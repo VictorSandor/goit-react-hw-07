@@ -3,8 +3,9 @@ import { useId } from "react";
 import * as Yup from "yup";
 import style from "./ContactForm.module.css";
 import { useDispatch } from "react-redux";
-import { addContact } from "../redux/contactsSlice";
+// import { addContact } from "../redux/contactsSlice";
 import { nanoid } from "nanoid";
+import { addContact } from "../redux/contactsOps";
 
 const validationSchema = Yup.object().shape({
   name: Yup.string()
